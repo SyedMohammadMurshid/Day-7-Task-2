@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 7 task 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        img{
+            padding-left: 500px 600px;
+            height: 100%;
+        }
+        .main{
+            padding-left: 32.5%;
+        }
+        .maindiv{
+            display: flex;
+            input{
+                height: 20px;
+                background-color:aliceblue;
+                border: none;
+            }
+        }
+        .checkright{
+            margin-left: 40px;
+        }
+        .email{
+            input{
+                height: 20px;
+                background-color:aliceblue;
+                border: none;
+            }
+        }
+        .check{
+            display: flex;
+        }
+        .sname{
+            margin-left: 40px;
+        }
+
+        button{
+            height: 60px;
+            width: 40%;
+            background-color: orange;
+            border-radius: 5px;
+        }
+        .star i{
+            padding-left: 7px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img src="data:image/png;base64,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" alt="que mira bobo">
+        <br><br><br>
+        <div class="maindiv">
+            <div >
+                <p>FirstName*</p><input type="text">
+            </div>
+            <div class="sname">
+                <p>SecondName*</p><input type="text">
+            </div>
+        </div>
+        <div class="email">
+            <p>Email Address*</p><input type="text">
+        </div>
+        <div class="star">
+            <h4>How was your overall experience?*</h4>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+        </div>
+        <h4>Was our representative (check all that apply):</h4>
+        <div class="check"> 
+            <div>
+                <input type="checkbox">Professional and courteous?<br><br>
+                <input type="checkbox">Knowledgable?<br><br>
+                <input type="checkbox">Friendly?<br><br>
+                <input type="checkbox">Efficient?
+            </div>
+            <div class="checkright">
+                <input type="checkbox">Patient?<br><br>
+                <input type="checkbox">Warm and respectful?<br><br>
+                <input type="checkbox">Clear and direct?<br><br>
+            </div>
+        </div><br><br><br>
+        <div class="submit">
+            <button>Submit feedback</button>
+        </div>
+    </div>
+
+    
+</body>
+</html>
